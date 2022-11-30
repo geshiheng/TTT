@@ -11,8 +11,8 @@ COLOR_INACTIVE = pygame.Color('lightskyblue3')
 COLOR_ACTIVE = (255,0,0)
 FONT = pygame.font.Font(None, 32)
 
-winWidth = 601
-winHeight = 601
+winWidth = 600
+winHeight = 600
 BACKGROUND_COLOR = (1, 1, 1)
 TEXT_COLOR = (255, 255, 255)
 
@@ -62,7 +62,7 @@ class InputBox:
 
 class CSV:
     def __init__(self):
-        self.filename = dir+'\\database.csv'
+        self.filename = dir+'/database.csv'
         self.fieldnames = ['S No', 'Name', 'Score']
         self.names = []
         self.scores=[]
@@ -136,7 +136,7 @@ def openLeaderboard():
     fields=''
     Y=0
 
-    win.fill((0,0,255))
+    win.fill((1,1,1))
 
     display_text("LEADERBOARDS",(winWidth*0.18,winHeight*0.05),50,color=(255,0,0))
 
@@ -185,7 +185,6 @@ def openLeaderboard():
 
 def welcomeScreen():
     
-
     # making the mouse invisible
     pygame.mouse.set_visible(False)
 
